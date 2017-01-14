@@ -1,4 +1,3 @@
-
 # coding: utf-8
 
 # ### get csv from SIX page for indices and funds (ETFs)
@@ -46,9 +45,4 @@ for fname, ident, domain, url in codelist:
     fname, headers = request.urlretrieve(url, filename=fname, data=data)
     print(fname, headers['Content-Type']) # correct Content-Type is 'text/csv'
     
-
-
-# In[ ]:
-
-
 
