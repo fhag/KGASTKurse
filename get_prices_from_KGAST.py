@@ -3,8 +3,6 @@
 
 # ### get daily xls from KGAST site - needs to be run every day
 
-# In[1]:
-
 import urllib.request as request
 import time
 
@@ -21,9 +19,6 @@ fname = 'KGASTxls/KGAST'+time.strftime('%Y-%m-%d--%H%M%S')+'.xls'
 fname, headers = request.urlretrieve(getxlslink, filename=fname)
 # show result and filename
 print(headers, fname)
-
-
-# In[ ]:
 
 
 
